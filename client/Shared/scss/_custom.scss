@@ -1,0 +1,1625 @@
+// Here you can add other styles
+.vTab .col-12 {
+    margin: 0;
+    padding: 0;
+}
+
+.vTab .nav-tabs .nav-link {
+    border: 1px solid #a4b7c1;
+}
+
+@media (min-width: 768px) {
+    .vTab .nav-tabs {
+        border: 1px solid #a4b7c1;
+        border-right: none;
+    }
+    .vTab .nav-tabs .nav-link {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border: none;
+    }
+}
+
+.vTab .tab-content {
+    margin: 0;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12,
+.col,
+.col-auto,
+.col-sm-1,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm,
+.col-sm-auto,
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md,
+.col-md-auto,
+.col-lg-1,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg,
+.col-lg-auto,
+.col-xl-1,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl,
+.col-xl-auto {
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: -10px;
+}
+
+.main .container-fluid {
+    padding: 0px 10px;
+}
+
+.form-control {
+    padding: 3px 5px;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.form-group {
+    margin-bottom: 5px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 1px;
+    line-height: 1;
+    font-size: 12px;
+}
+
+.react-tel-input {
+    width: inherit;
+}
+
+.react-tel-input input[type=text],
+.react-tel-input input[type=tel] {
+    line-height: 21px;
+    height: 24px;
+    border-radius: 0px;
+    border: 1px solid #c2cfd6;
+    box-shadow: none;
+}
+
+.react-tel-input .selected-flag {
+    height: 22px;
+    border-radius: 0;
+}
+
+@font-face {
+    font-family: 'travelaps';
+    src: url('https://s3-eu-west-1.amazonaws.com/webhotel/images/1464679642168.eot?vvb5y3');
+    src: url('https://s3-eu-west-1.amazonaws.com/webhotel/images/1464679642168.eot?vvb5y3#iefix') format('embedded-opentype'), url('https://s3-eu-west-1.amazonaws.com/webhotel/images/1464679676903.woff2?vvb5y3') format('woff2'), url('https://s3-eu-west-1.amazonaws.com/webhotel/images/1464679712859.ttf?vvb5y3') format('truetype'), url('https://s3-eu-west-1.amazonaws.com/webhotel/images/1464679754483.woff?vvb5y3') format('woff'), url('https://s3-eu-west-1.amazonaws.com/webhotel/images/1464680014439.svg?vvb5y3#travelaps') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="ha-"],
+[class*=" ha-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'travelaps' !important; // speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ha-Securedparkingareaforbicyclesandmotorcycles:before {
+    content: "\e9c3";
+}
+
+.ha-Chapelshrine:before {
+    content: "\e9c4";
+}
+
+.ha-MiniClub:before {
+    content: "\e9c5";
+}
+
+.ha-Bridalsuite .path1:before {
+    content: "\e9c6";
+    color: rgb(0, 0, 0);
+}
+
+.ha-Bridalsuite .path2:before {
+    content: "\e9c7";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.ha-Grounds:before {
+    content: "\e9c8";
+}
+
+.ha-Steamroom:before {
+    content: "\e9c9";
+}
+
+.ha-Balcony:before {
+    content: "\e9ca";
+}
+
+.ha-Fishing:before {
+    content: "\e9cb";
+}
+
+.ha-Kanoe:before {
+    content: "\e9cc";
+}
+
+.ha-BeachTowel:before {
+    content: "\e9cd";
+}
+
+.ha-JetSki:before {
+    content: "\e9b1";
+}
+
+.ha-ConversationRoom:before {
+    content: "\e9b2";
+}
+
+.ha-QURAN:before {
+    content: "\e9b3";
+}
+
+.ha-LadiesMosque:before {
+    content: "\e9b4";
+}
+
+.ha-AirHockey .path1:before {
+    content: "\e9b5";
+    color: rgb(0, 0, 0);
+}
+
+.ha-AirHockey .path2:before {
+    content: "\e9b6";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.ha-AirHockey .path3:before {
+    content: "\e9b7";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.ha-AirHockey .path4:before {
+    content: "\e9b8";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.ha-AirHockey .path5:before {
+    content: "\e9b9";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.ha-AirHockey .path6:before {
+    content: "\e9ba";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-AirHockey .path7:before {
+    content: "\e9bb";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-AirHockey .path8:before {
+    content: "\e9bc";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-AirHockey .path9:before {
+    content: "\e9bd";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-AirHockey .path10:before {
+    content: "\e9be";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-SkinandBodyCare:before {
+    content: "\e9bf";
+}
+
+.ha-Pinball:before {
+    content: "\e9c0";
+}
+
+.ha-VanityMirror:before {
+    content: "\e9c1";
+}
+
+.ha-Doctor .path1:before {
+    content: "\e9a8";
+    color: rgb(0, 0, 0);
+}
+
+.ha-Doctor .path2:before {
+    content: "\e9a9";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-Doctor .path3:before {
+    content: "\e9aa";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.ha-RoomService:before {
+    content: "\e9ab";
+}
+
+.ha-MiniBar:before {
+    content: "\e9ac";
+}
+
+.ha-Garden:before {
+    content: "\e9ad";
+}
+
+.ha-DesignHotel:before {
+    content: "\e9ae";
+}
+
+.ha-IroningService:before {
+    content: "\e9af";
+}
+
+.ha-TrouserPress:before {
+    content: "\e9b0";
+}
+
+.ha-Nurse .path1:before {
+    content: "\e998";
+    color: rgb(0, 0, 0);
+}
+
+.ha-Nurse .path2:before {
+    content: "\e999";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-Nurse .path3:before {
+    content: "\e99a";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-Nurse .path4:before {
+    content: "\e99b";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.ha-Nurse .path5:before {
+    content: "\e99c";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.ha-Nurse .path6:before {
+    content: "\e99d";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.ha-Nurse .path7:before {
+    content: "\e99e";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.ha-Nurse .path8:before {
+    content: "\e99f";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.ha-Nurse .path9:before {
+    content: "\e9a0";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.ha-Nurse .path10:before {
+    content: "\e9a1";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.ha-Nurse .path11:before {
+    content: "\e9a4";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-Nurse .path12:before {
+    content: "\e9a5";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-Nurse .path13:before {
+    content: "\e9a6";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-Nurse .path14:before {
+    content: "\e9a7";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-VIPRoomFacilities .path1:before {
+    content: "\e908";
+    color: rgb(109, 110, 113);
+}
+
+.ha-VIPRoomFacilities .path2:before {
+    content: "\e909";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-VIPRoomFacilities .path3:before {
+    content: "\e90a";
+    margin-left: -1em;
+    color: rgb(77, 77, 77);
+}
+
+.ha-VIPRoomFacilities .path4:before {
+    content: "\e90b";
+    margin-left: -1em;
+    color: rgb(77, 77, 77);
+}
+
+.ha-VIPRoomFacilities .path5:before {
+    content: "\e90c";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-VendingMachineSnacks:before {
+    content: "\e90d";
+}
+
+.ha-VendingMachineDrinks:before {
+    content: "\e90e";
+}
+
+.ha-Turkish-SteamBath .path1:before {
+    content: "\e90f";
+    color: rgb(109, 110, 113);
+}
+
+.ha-Turkish-SteamBath .path2:before {
+    content: "\e910";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-Turkish-SteamBath .path3:before {
+    content: "\e911";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-Turkish-SteamBath .path4:before {
+    content: "\e912";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-Turkish-SteamBath .path5:before {
+    content: "\e913";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-Turkish-SteamBath .path6:before {
+    content: "\e914";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-Turkish-SteamBath .path7:before {
+    content: "\e915";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.ha-Turkish-SteamBath .path8:before {
+    content: "\e916";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-Turkish-SteamBath .path9:before {
+    content: "\e917";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-Turkish-SteamBath .path10:before {
+    content: "\e918";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-TicketService .path1:before {
+    content: "\e91b";
+    color: rgb(0, 0, 0);
+}
+
+.ha-TicketService .path2:before {
+    content: "\e91c";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-TicketService .path3:before {
+    content: "\e91d";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.ha-TicketService .path4:before {
+    content: "\e91e";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.ha-TicketService .path5:before {
+    content: "\e91f";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.ha-TicketService .path6:before {
+    content: "\e920";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.ha-Telephone:before {
+    content: "\e921";
+}
+
+.ha-Spybath-Jacuzzi:before {
+    content: "\e922";
+}
+
+.ha-SpecialDietMenusOnRequest:before {
+    content: "\e923";
+}
+
+.ha-Ski-to-DoorAccess:before {
+    content: "\e925";
+}
+
+.ha-SkiPassVendor:before {
+    content: "\e926";
+}
+
+.ha-SkiEquipmentHireonSite:before {
+    content: "\e927";
+}
+
+.ha-Shoeshine .path1:before {
+    content: "\e928";
+    color: rgb(255, 255, 255);
+}
+
+.ha-Shoeshine .path2:before {
+    content: "\e929";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.ha-Shoeshine .path3:before {
+    content: "\e92a";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-Shoeshine .path4:before {
+    content: "\e92b";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-Shoeshine .path5:before {
+    content: "\e92c";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-Shoeshine .path6:before {
+    content: "\e92d";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-Shoeshine .path7:before {
+    content: "\e92e";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-Shoeshine .path8:before {
+    content: "\e92f";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-Shoeshine .path9:before {
+    content: "\e930";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-Shoeshine .path10:before {
+    content: "\e931";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-Shoeshine .path11:before {
+    content: "\e932";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-Shoeshine .path12:before {
+    content: "\e933";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-Shoeshine .path13:before {
+    content: "\e934";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-Shoeshine .path14:before {
+    content: "\e935";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-Shoeshine .path15:before {
+    content: "\e936";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-Shoeshine .path16:before {
+    content: "\e937";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-Shoeshine .path17:before {
+    content: "\e938";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-Shoeshine .path18:before {
+    content: "\e939";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-Shoeshine .path19:before {
+    content: "\e93a";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-Shoeshine .path20:before {
+    content: "\e93b";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.ha-SafetyDepositBox:before {
+    content: "\e93c";
+}
+
+.ha-PrivateCheck-In-Check-Out:before {
+    content: "\e93d";
+}
+
+.ha-PackedLunches:before {
+    content: "\e93e";
+}
+
+.ha-Nightclub-DJ:before {
+    content: "\e93f";
+}
+
+.ha-Meeting-BanquetFacilities:before {
+    content: "\e940";
+}
+
+.ha-HoneymoonSuite:before {
+    content: "\e941";
+}
+
+.ha-Hairdryer:before {
+    content: "\e942";
+}
+
+.ha-FreeBathroomSupplies .path1:before {
+    content: "\e943";
+    color: rgb(109, 110, 113);
+}
+
+.ha-FreeBathroomSupplies .path2:before {
+    content: "\e944";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-FreeBathroomSupplies .path3:before {
+    content: "\e945";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-FreeBathroomSupplies .path4:before {
+    content: "\e946";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-FreeBathroomSupplies .path5:before {
+    content: "\e947";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-FreeBathroomSupplies .path6:before {
+    content: "\e948";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-FreeBathroomSupplies .path7:before {
+    content: "\e949";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.ha-FreeBathroomSupplies .path8:before {
+    content: "\e94a";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-FreeBathroomSupplies .path9:before {
+    content: "\e94b";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-FreeBathroomSupplies .path10:before {
+    content: "\e94c";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-FamilyBathroom .path1:before {
+    content: "\e952";
+    color: rgb(109, 110, 113);
+}
+
+.ha-FamilyBathroom .path2:before {
+    content: "\e953";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-FamilyBathroom .path3:before {
+    content: "\e954";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-FamilyBathroom .path4:before {
+    content: "\e955";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-FamilyBathroom .path5:before {
+    content: "\e956";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-FamilyBathroom .path6:before {
+    content: "\e957";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-FamilyBathroom .path7:before {
+    content: "\e958";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.ha-FamilyBathroom .path8:before {
+    content: "\e959";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-FamilyBathroom .path9:before {
+    content: "\e95a";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-FamilyBathroom .path10:before {
+    content: "\e95b";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-ConciergeService:before {
+    content: "\e95c";
+}
+
+.ha-Bathtub .path1:before {
+    content: "\e95d";
+    color: rgb(109, 110, 113);
+}
+
+.ha-Bathtub .path2:before {
+    content: "\e95e";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-Bathtub .path3:before {
+    content: "\e95f";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-Bathtub .path4:before {
+    content: "\e960";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-Bathtub .path5:before {
+    content: "\e961";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-Bathtub .path6:before {
+    content: "\e962";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-Bathtub .path7:before {
+    content: "\e963";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.ha-Bathtub .path8:before {
+    content: "\e964";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-Bathtub .path9:before {
+    content: "\e965";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-Bathtub .path10:before {
+    content: "\e966";
+    margin-left: -1em;
+    color: rgb(109, 110, 113);
+}
+
+.ha-BeautyShop:before {
+    content: "\e967";
+}
+
+.ha-Babysitting-ChildServices:before {
+    content: "\e968";
+}
+
+.ha-Airconditioning:before {
+    content: "\e969";
+}
+
+.ha-Tv:before {
+    content: "\e002";
+}
+
+.ha-Gallery:before {
+    content: "\e010";
+}
+
+.ha-Rug:before {
+    content: "\e019";
+}
+
+.ha-GamesRoom:before {
+    content: "\e026";
+}
+
+.ha-FacilitiesforDisabledGuests:before {
+    content: "\e02f";
+}
+
+.ha-HourseRiding:before {
+    content: "\e03b";
+}
+
+.ha-SnackBar:before {
+    content: "\e043";
+}
+
+.ha-InternetCafe:before {
+    content: "\e052";
+}
+
+.ha-Photographer:before {
+    content: "\e97f";
+}
+
+.ha-Newspapers:before {
+    content: "\e900";
+}
+
+.ha-Restaurant:before {
+    content: "\e91a";
+}
+
+.ha-Firedetector:before {
+    content: "\e986";
+}
+
+.ha-Billiards:before {
+    content: "\e901";
+}
+
+.ha-TennisCourt:before {
+    content: "\e995";
+}
+
+.ha-Basketball:before {
+    content: "\e97a";
+}
+
+.ha-PingPong:before {
+    content: "\e972";
+}
+
+.ha-BeachVolleyball:before {
+    content: "\e97b";
+}
+
+.ha-GolfCoursewithin3km:before {
+    content: "\e96f";
+}
+
+.ha-WaterSportsFacilitiesonSite:before {
+    content: "\e902";
+}
+
+.ha-Darts:before {
+    content: "\e98c";
+}
+
+.ha-Archery:before {
+    content: "\e983";
+}
+
+.ha-Seashore:before {
+    content: "\e903";
+}
+
+.ha-Bowling:before {
+    content: "\e974";
+}
+
+.ha-Diving:before {
+    content: "\e973";
+}
+
+.ha-SnowRoom:before {
+    content: "\e9c2";
+}
+
+.ha-WindSurfing:before {
+    content: "\e970";
+}
+
+.ha-CaplessDrinksAllDayLong:before {
+    content: "\e987";
+}
+
+.ha-BuffetBreaksfast:before {
+    content: "\e96a";
+}
+
+.ha-PlayStation:before {
+    content: "\e980";
+}
+
+.ha-FaxPhotocopy:before {
+    content: "\e904";
+}
+
+.ha-Billard:before {
+    content: "\e984";
+}
+
+.ha-FootballPaid:before {
+    content: "\e97d";
+}
+
+.ha-Kitchen:before {
+    content: "\e981";
+}
+
+.ha-DryCleaning:before {
+    content: "\e905";
+}
+
+.ha-Coiffeur:before {
+    content: "\e982";
+}
+
+.ha-Garage:before {
+    content: "\e990";
+}
+
+.ha-Shuttle:before {
+    content: "\e979";
+}
+
+.ha-AirportShuttle:before {
+    content: "\e950";
+}
+
+.ha-Karaoke:before {
+    content: "\e971";
+}
+
+.ha-SunTerrace:before {
+    content: "\e96b";
+}
+
+.ha-CurrencyExchange:before {
+    content: "\e94f";
+}
+
+.ha-LiftElevator:before {
+    content: "\e96e";
+}
+
+.ha-ChapelTemple:before {
+    content: "\e96c";
+}
+
+.ha-AntiAllergyRoom:before {
+    content: "\e951";
+}
+
+.ha-SouvenirsGiftShop:before {
+    content: "\e94e";
+}
+
+.ha-24HourReception:before {
+    content: "\e907";
+}
+
+.ha-Cafeteria:before {
+    content: "\e991";
+}
+
+.ha-LuggageStorage:before {
+    content: "\f096";
+}
+
+.ha-Allergyfreeroom:before {
+    content: "\e992";
+}
+
+.ha-ConferenceRoom:before {
+    content: "\e993";
+}
+
+.ha-Wi-FiInternetConnection:before {
+    content: "\e924";
+}
+
+.ha-Cinema:before {
+    content: "\e97c";
+}
+
+.ha-FiveoclockTea:before {
+    content: "\e9a2";
+}
+
+.ha-Dinner:before {
+    content: "\e9a3";
+}
+
+.ha-LadiesBeach:before {
+    content: "\e9dd";
+}
+
+.ha-AdultOnly:before {
+    content: "\e9de";
+}
+
+.ha-TourDesk:before {
+    content: "\ea0c";
+}
+
+.ha-Beads:before {
+    content: "\ea56";
+}
+
+.ha-WakeupService:before {
+    content: "\e191";
+}
+
+.ha-BabyChair:before {
+    content: "\e631";
+}
+
+.ha-BeachandPoolUmbrellas:before {
+    content: "\eb3e";
+}
+
+.ha-BusinessCenter:before {
+    content: "\eb3f";
+}
+
+.ha-Casino:before {
+    content: "\eb40";
+}
+
+.ha-BabyBed:before {
+    content: "\eb41";
+}
+
+.ha-BikesAvailable:before {
+    content: "\e52f";
+}
+
+.ha-Seaport:before {
+    content: "\e532";
+}
+
+.ha-TransferService:before {
+    content: "\e530";
+}
+
+.ha-RentalCar:before {
+    content: "\e531";
+}
+
+.ha-BreakfastintheRoom:before {
+    content: "\eb44";
+}
+
+.ha-TurkishSteamBath:before {
+    content: "\eb46";
+}
+
+.ha-ATMCashMachineonSite:before {
+    content: "\e53e";
+}
+
+.ha-LateDinner:before {
+    content: "\e561";
+}
+
+.ha-Pet:before {
+    content: "\e97e";
+}
+
+.ha-SwimmingPool:before {
+    content: "\eb48";
+}
+
+.ha-NonSmokingRooms:before {
+    content: "\eb4a";
+}
+
+.ha-DesignatedSmokingArea:before {
+    content: "\eb4b";
+}
+
+.ha-Massage:before {
+    content: "\eb4c";
+}
+
+.ha-ShopsinHotel:before {
+    content: "\e563";
+}
+
+.ha-RestrictedAccess:before {
+    content: "\e628";
+}
+
+.ha-BaggageStorage:before {
+    content: "\e98b";
+}
+
+.ha-Entranceswithvideosurveillance:before {
+    content: "\e989";
+}
+
+.ha-ChangingRoom:before {
+    content: "\e996";
+}
+
+.ha-Terrace:before {
+    content: "\e997";
+}
+
+.ha-Expresscheckincheckout:before {
+    content: "\e98f";
+}
+
+.ha-AnimationTeam:before {
+    content: "\e919";
+}
+
+.ha-Creditcardfacilities:before {
+    content: "\e98d";
+}
+
+.ha-CocktailLounge:before {
+    content: "\e994";
+}
+
+.ha-FitnessCenter:before {
+    content: "\e976";
+}
+
+.ha-Heating:before {
+    content: "\e96d";
+}
+
+.ha-Smokealarm:before {
+    content: "\e985";
+}
+
+.ha-NightSoup:before {
+    content: "\e988";
+}
+
+.ha-BlueFlag:before {
+    content: "\e978";
+}
+
+.ha-Shoeshine2:before {
+    content: "\e906";
+}
+
+.ha-ChildrensPlayground:before {
+    content: "\e98e";
+}
+
+.ha-Lifeguard:before {
+    content: "\e94d";
+}
+
+.ha-Hiking:before {
+    content: "\e975";
+}
+
+.ha-WaterSlide:before {
+    content: "\e977";
+}
+
+.ha-Sprinklersystem:before {
+    content: "\e98a";
+}
+
+.input-group-text .form-check-input {
+    margin-left: -6px;
+}
+
+.react-datepicker__close-icon::after {
+    background-color: #216ba5;
+    border-radius: 50%;
+    bottom: 0;
+    box-sizing: border-box;
+    color: #fff;
+    content: "\D7";
+    cursor: pointer;
+    font-size: 12px;
+    height: 16px;
+    width: 16px;
+    line-height: 1;
+    margin: 4px auto 0;
+    padding: 1px;
+    position: absolute;
+    right: 7px;
+    text-align: center;
+    top: 0;
+}
+
+.react-datepicker-wrapper {
+    display: inherit;
+}
+
+.react-datepicker__input-container {
+    display: inherit;
+}
+
+.input-group-lg>.input-group-append>.input-group-text {
+    padding: 6px 6px;
+}
+
+.loader-active {
+    justify-content: center;
+    display: flex;
+}
+
+.loader-inner {
+    margin: auto;
+}
+
+.alert {
+    padding: 1px 10px;
+}
+
+.card-header .card-actions a,
+.card-header .card-actions button {
+    padding: 0.75rem 10px;
+    width: inherit;
+    background-color: inherit;
+}
+
+.btn-primary {
+    color: #fff !important;
+    background-color: #20a8d8 !important;
+}
+
+.btn-info {
+    color: #151b1e !important;
+    background-color: #63c2de !important;
+}
+
+.btn-danger {
+    color: #fff !important;
+    background-color: #f86c6b !important;
+}
+
+.input-group.checked .input-group-prepend>*,
+.input-group.checked .input-group-append>* {
+    background-color: #20a8d8;
+    border: 1px solid #20a8d8; // border-color: greenyellow;
+}
+
+.input-group.checked .form-control {
+    border: 1px solid #20a8d8;
+}
+
+.table th,
+.table td {
+    padding: 3px;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.table td .btn {
+    padding: 0px 5px;
+    height: 20px;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.table-check {
+    width: 100%;
+    margin: 7px 0px;
+}
+
+.table-input {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 27px;
+    font-size: 1em;
+}
+
+input[type="number"].table-input::-webkit-outer-spin-button,
+input[type="number"].table-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"].table-input {
+    -moz-appearance: textfield;
+}
+
+.input-cell {
+    padding: 0px !important;
+    margin: 0px !important;
+    position: relative;
+    text-align: center;
+}
+
+.td-header {
+    background-color: #8cd8f3;
+    cursor: pointer;
+    padding: 6px 10px !important;
+}
+
+.dx-rg-bs4-table-head {
+    background-color: #8cd8f3 !important;
+}
+
+.dx-rg-bs4-table-head th {
+    padding: 5px 3px !important;
+    color: #000;
+    font-size: 14px;
+}
+
+.dx-rg-bs4-table-head th,
+.dx-rg-bs4-table-head td {
+    border-top: 1px solid #8cd8f3 !important;
+    border-bottom: 1px solid #8cd8f3 !important;
+}
+
+.dx-rg-bs4-table th,
+.dx-rg-bs4-table td {
+    border-top: 1px solid #8cd8f3 !important;
+    border-bottom: 1px solid #8cd8f3 !important;
+}
+
+.fytDol thead th {
+    background-color: #20a8d8;
+}
+
+.dynamic .Select {
+    font-size: 12px;
+}
+
+.dynamic .Select.input-sm {
+    padding: 0;
+}
+
+.dynamic .Select-menu-outer {
+    z-index: 9999 !important;
+}
+
+.dynamic .Select-control {
+    height: 24px;
+    overflow: inherit;
+    background-color: transparent;
+}
+
+.dynamic .Select-input {
+    height: 22px;
+    padding-left: 5px;
+}
+
+.dynamic .Select-input input {
+    height: 18px;
+    padding: 3px 0px;
+}
+
+.dynamic .Select-placeholder,
+.dynamic .Select--single>.Select-control .Select-value {
+    line-height: 22px;
+    padding-left: 5px;
+    height: 24px;
+}
+
+.dynamic .Select-control {
+    // border: 0 !important;
+    // border-bottom-width: 0px;
+    // border-bottom-style: none;
+    // border-bottom-color: currentcolor;
+    border-radius: 0 !important; // border-bottom: 1px solid #c2cad8 !important;
+}
+
+.dynamic .is-focused:not(.is-open)>.Select-control {
+    border-color: none !important;
+    box-shadow: none !important;
+}
+
+.dynamic .Select-menu-outer {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top-color: #e6e6e6;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+    margin-top: -1px;
+    max-height: 200px;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    min-width: 100px;
+    display: block;
+    -webkit-overflow-scrolling: touch;
+}
+
+.dynamic .Select-value-label {
+    line-height: 22px;
+}
+
+.contract-card {
+    border-radius: 0;
+    margin-bottom: 6px;
+}
+
+.contract-card .card-header {
+    padding: 5px 13px;
+}
+
+.contract-card .card-header .card-actions a,
+.contract-card .card-header .card-actions button {
+    padding: 5px 13px;
+}
+
+.contract-card .card-body {
+    background-color: #fff;
+    color: #000;
+    padding: 12px;
+}
+
+.contract-card .card-body .table {
+    margin: 0;
+}
+
+.contract-table th,
+.contract-table td {
+    text-align: center;
+    position: relative;
+    font-size: 12px;
+}
+
+.contract-table td {
+    text-align: center;
+}
+
+.contract-table .number td * {
+    text-align: center;
+}
+
+.contract-table td {
+    width: 70px;
+    text-align: center;
+    padding: 2px 7px;
+}
+.contract-table .row > div > div {
+    height: 24px;
+}
+.contract-table .react-datepicker-wrapper {
+    display: inherit;
+    position: absolute;
+}
+
+.table [class*=' col-'] {
+    padding: 0;
+}
+.table input[type=number]::-webkit-inner-spin-button, 
+.table input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.table thead th {
+    vertical-align: middle;
+    border-bottom: 2px solid #a4b7c1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 70px;
+}
+
+.DayPickerInput {
+    width: 100%;
+}
+.ReactTable .rt-td{
+    padding: 3px 5px;
+}
+.ReactTable .-pagination input, .ReactTable .-pagination select{
+    padding: 2px 5px;
+}

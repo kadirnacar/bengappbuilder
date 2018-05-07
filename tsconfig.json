@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es6",
+    "jsx": "react",
+    "emitDecoratorMetadata": false,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "removeComments": true,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "strictNullChecks": false,
+    "strict": true,
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "types": [
+      "webpack-env",
+      "node"
+    ],
+    "typeRoots": ["node_modules/@types", "custom_typings"]
+  },
+  "exclude": [
+    "dist",
+    "bin",
+    "node_modules"
+  ],
+  "include": [
+    "server",
+    "src"
+  ]
+}
