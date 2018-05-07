@@ -40,7 +40,7 @@ function renderApp(App) {
     ReactDOM.render(
         <AppContainer>
             <Provider store={store}>
-                <App >
+                <App basename="/" >
                     <Routes />
                 </App>
             </Provider>

@@ -17,7 +17,9 @@ import nav from './_nav';
 
 class App extends React.Component<any, any> {
     componentWillMount() {
-
+        // if (this.props.location.pathname.indexOf("/admin") > -1) {
+        //     window.location.href="/admin";
+        // }
     }
     render() {
         const { checked, authenticated } = this.props;
@@ -28,8 +30,8 @@ class App extends React.Component<any, any> {
             <Route path="/activate/:guid" component={Activate} />
             <Route path="/newpassword/:guid" component={NewPassword} />
             <Full nav={nav}>
-            <Route path="/" component={Dashboard} />
-            
+                <Route path="/" component={Dashboard} />
+
                 {/* <PrivateRoute exact path="/" component={Dashboard} authenticated={authenticated} />
                 {authenticated ? null : <Redirect from="/" to="/login" />} */}
             </Full>
@@ -38,7 +40,7 @@ class App extends React.Component<any, any> {
 }
 
 
-export default connect(
-    (state: ApplicationState) => state.session, 
-    AuthState.actionCreators                 
-)(App) as typeof App;
+export default withRouter(connect<any, any, any, any>(
+    (state: ApplicationState) => state.session,
+    AuthState.actionCreators
+)(App));

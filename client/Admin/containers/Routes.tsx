@@ -23,7 +23,6 @@ class App extends React.Component<any, any> {
     }
     render() {
         const { checked, authenticated } = this.props;
-        document.body.classList.toggle('sidebar-mobile-show');
         return <Switch>
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />

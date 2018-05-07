@@ -40,7 +40,8 @@ module.exports = (env) => {
             extensions: ['.js', '.jsx', '.ts', '.tsx']
         },
         entry: {
-            'app': ['./client/App/boot-client.tsx']
+            'app': ['./client/App/boot-client.tsx'],
+            // 'admin/app': ['./client/Admin/boot-client.tsx']
         },
         module: {
             rules: [{
@@ -186,6 +187,13 @@ module.exports = (env) => {
                     inject: true,
                     cache: false
                 }),
+                // new HtmlWebpackPlugin({
+                //     chunks: ['admin/app', 'vendor'],
+                //     filename: path.resolve(".", 'dist/admin/index.html'),
+                //     template: path.resolve(".", 'index.html'),
+                //     inject: true,
+                //     cache: false
+                // }),
                 // new MiniCssExtractPlugin({
                 //     filename: "[name]-[hash].css",
                 //     chunkFilename: '[name]-[hash].css'

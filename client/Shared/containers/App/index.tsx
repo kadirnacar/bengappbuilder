@@ -17,7 +17,7 @@ class App extends React.Component<any, any> {
 
     }
     render() {
-        return <BrowserRouter>
+        return <BrowserRouter basename={this.props.basename}>
            {this.props.children}
         </BrowserRouter>
     }
