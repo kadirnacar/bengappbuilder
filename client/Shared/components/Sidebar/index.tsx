@@ -9,6 +9,8 @@ import SidebarMinimizer from '../SidebarMinimizer';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import { ApplicationState } from '../../store';
+import * as LayoutState from '../../reducers/Layout';
 
 class Sidebar extends React.Component<any, any>  {
 
@@ -153,7 +155,7 @@ class Sidebar extends React.Component<any, any>  {
 
     // sidebar-nav root
     return (
-      <div className="sidebar">
+      <div className="sidebar" style={{ marginLeft: this.props.sidebarOpen ? null : -200 }}>
         <SidebarHeader />
         <SidebarForm />
         <nav className="sidebar-nav">
@@ -167,6 +169,8 @@ class Sidebar extends React.Component<any, any>  {
     )
   }
 }
-
-export default withRouter(Sidebar);
+export default withRouter(connect<any, any, any, any>(
+  (state: ApplicationState) => state.layout,
+  LayoutState.actionCreators
+)(Sidebar));
 

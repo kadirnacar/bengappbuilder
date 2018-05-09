@@ -1,12 +1,10 @@
-import { reducer as selectReducer, SelectItemsState } from '../reducers/SelectItems';
-import { sessionReducer } from 'redux-react-session';
+import { ApplicationState as SharedState,reducers as SharedReducer } from '../../Shared/store';
 
-export interface ApplicationState {
-    select: SelectItemsState;
-    session: any;
+
+export interface ApplicationState extends SharedState {
+ 
 }
 
 export const reducers = {
-    select: selectReducer,
-    session: sessionReducer
+    ...SharedReducer
 };

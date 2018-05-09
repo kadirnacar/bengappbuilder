@@ -19,7 +19,7 @@ import nav from './_nav';
 
 class App extends React.Component<any, any> {
     componentDidMount() {
-        document.body.classList.toggle('sidebar-hidden');
+        // document.body.classList.toggle('sidebar-hidden');
     }
     render() {
         const { checked, authenticated } = this.props;
@@ -29,7 +29,7 @@ class App extends React.Component<any, any> {
             <Route path="/forgetpassword" component={ForgetPassword} />
             <Route path="/activate/:guid" component={Activate} />
             <Route path="/newpassword/:guid" component={NewPassword} />
-            <Full nav={nav} headerMenu={<HeaderMenu/>}>
+            <Full nav={nav} headerMenu={<HeaderMenu/>} sidebarShow={false}>
                 <Route path="/" component={Dashboard} />
                 <Route path="/forms" component={Forms} />
                 {/* <PrivateRoute exact path="/" component={Dashboard} authenticated={authenticated} />

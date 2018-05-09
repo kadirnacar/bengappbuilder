@@ -2,7 +2,6 @@ import * as React from 'react';
 import { Bar, Line } from 'react-chartjs-2';
 import { mapToCssModules } from 'reactstrap/lib/utils';
 import * as classNames from 'classnames';
-import { ApplicationState } from '../../store';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { withRouter } from 'react-router-dom';
@@ -37,6 +36,7 @@ import Datatable from '../../../Shared/components/Elements/Datatable';
 class Forms extends React.Component<any, any> {
 
   componentDidMount() {
+   
   }
   render() {
     const data = [{
@@ -118,13 +118,13 @@ class Forms extends React.Component<any, any> {
               <CardHeader>
                 <i className="fa fa-wpforms"></i> Formlar
                 <div className="card-actions">
-                    <Button className="btn btn-minimize" color="primary" ><i className="fa fa-plus-square"></i> Yeni</Button>
-                    <Button className="btn btn-minimize" color="info" ><i className="fa fa-refresh"></i> Yenile</Button>
-                  </div>
+                  <Button className="btn btn-minimize" color="primary" ><i className="fa fa-plus-square"></i> Yeni</Button>
+                  <Button className="btn btn-minimize" color="info" ><i className="fa fa-refresh"></i> Yenile</Button>
+                </div>
               </CardHeader>
               <CardBody>
-                <Datatable data={data} columns={columns}/>
-               
+                <Datatable data={data} columns={columns} />
+
               </CardBody>
             </Card>
           </Col>

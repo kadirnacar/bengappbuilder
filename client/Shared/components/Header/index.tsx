@@ -7,12 +7,17 @@ import {
   NavbarBrand,
 } from 'reactstrap';
 import HeaderDropdown from './HeaderDropdown';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { ApplicationState } from '../../store';
+import * as LayoutState from '../../reducers/Layout';
 
 class Header extends React.Component<any, any> {
 
   sidebarToggle(e) {
     e.preventDefault();
-    document.body.classList.toggle('sidebar-hidden');
+    //  document.body.classList.toggle('sidebar-hidden');
+    this.props.toggleSidebar();
   }
 
   sidebarMinimize(e) {
@@ -27,7 +32,8 @@ class Header extends React.Component<any, any> {
 
   asideToggle(e) {
     e.preventDefault();
-    document.body.classList.toggle('aside-menu-hidden');
+    // document.body.classList.toggle('aside-menu-hidden');
+    this.props.toggleAside();
   }
 
   render() {
@@ -37,7 +43,7 @@ class Header extends React.Component<any, any> {
           <span className="navbar-toggler-icon"></span>
         </NavbarToggler>
         <NavbarBrand href="#"></NavbarBrand>
-        <NavbarToggler className="d-md-down-none" onClick={this.sidebarToggle}>
+        <NavbarToggler className="d-md-down-none" onClick={this.sidebarToggle.bind(this)}>
           <span className="navbar-toggler-icon"></span>
         </NavbarToggler>
         <Nav className="d-md-down-none" navbar>
@@ -46,7 +52,7 @@ class Header extends React.Component<any, any> {
         <Nav className="ml-auto" navbar>
           <HeaderDropdown />
         </Nav>
-        <NavbarToggler className="d-md-down-none" onClick={this.asideToggle}>
+        <NavbarToggler className="d-md-down-none" onClick={this.asideToggle.bind(this)}>
           <span className="navbar-toggler-icon"></span>
         </NavbarToggler>
       </header>
@@ -54,5 +60,10 @@ class Header extends React.Component<any, any> {
   }
 }
 
-export default Header;
+// export default Header;
+
+export default connect<any,any,any,any>(
+  (state: ApplicationState) => state.layout,
+  LayoutState.actionCreators
+)(Header);
 
