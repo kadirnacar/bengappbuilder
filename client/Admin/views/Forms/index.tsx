@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { withRouter } from 'react-router-dom';
 import Widget from '../../../Shared/components/Widget';
+import Aside from '../../../Shared/components/Aside/';
 
 import {
   Badge,
@@ -36,7 +37,7 @@ import Datatable from '../../../Shared/components/Elements/Datatable';
 class Forms extends React.Component<any, any> {
 
   componentDidMount() {
-   
+
   }
   render() {
     const data = [{
@@ -118,7 +119,7 @@ class Forms extends React.Component<any, any> {
               <CardHeader>
                 <i className="fa fa-wpforms"></i> Formlar
                 <div className="card-actions">
-                  <Button className="btn btn-minimize" color="primary" ><i className="fa fa-plus-square"></i> Yeni</Button>
+                  <Button className="btn btn-minimize" color="primary" onClick={()=>{this.props.history.push("/forms/Detail/0")}} ><i className="fa fa-plus-square"></i> Yeni</Button>
                   <Button className="btn btn-minimize" color="info" ><i className="fa fa-refresh"></i> Yenile</Button>
                 </div>
               </CardHeader>

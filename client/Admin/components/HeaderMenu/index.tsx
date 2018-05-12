@@ -21,7 +21,7 @@ class HeaderMenu extends React.Component<any, any> {
                 <NavLink to="/"><i className="fa fa-home"></i> Anasayfa</NavLink>
             </NavItem>,
             <NavItem  key="2" className="px-3">
-                <NavLink to="/forms"><i className="fa fa-wpforms"></i> Formlar</NavLink>
+                <NavLink to="/forms"><i className="fa fa-wpforms"></i> Sayfalar</NavLink>
             </NavItem>
             ]
         );

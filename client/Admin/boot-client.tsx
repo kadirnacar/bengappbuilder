@@ -11,6 +11,7 @@ import App from '../Shared/containers/App';
 import Routes from './containers/Routes';
 import history from '../Shared/store/history';
 
+import '@coreui/icons/css/coreui-icons.min.css';
 // Styles
 // Import Flag Icons Set
 import 'flag-icon-css/css/flag-icon.min.css';
@@ -27,8 +28,8 @@ import 'react-telephone-input/css/default.css';
 import 'loaders.css/loaders.min.css';
 import 'react-table/react-table.css'
 import 'rc-color-picker/assets/index.css';
+import 'react-scrollbar/dist/css/scrollArea.css';
 import '../Shared/scss/style.scss';
-import '../Shared/scss/core/_dropdown-menu-right.scss';
 import '../Shared/public/flags.png';
 
 

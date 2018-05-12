@@ -141,9 +141,6 @@ class Sidebar extends React.Component<any, any>  {
     // nav list
     const navList = (items) => {
       return items.map((item, index) => {
-        if (this.props.CurrentHotel == null && item.url != "/") {
-          return null;
-        }
         return navType(item, index);
       });
     };
@@ -152,10 +149,9 @@ class Sidebar extends React.Component<any, any>  {
       const link = url ? url.substring(0, 4) : '';
       return link === 'http';
     };
-
     // sidebar-nav root
     return (
-      <div className="sidebar" style={{ marginLeft: this.props.sidebarOpen ? null : -200 }}>
+      <div className="sidebar" style={{ marginLeft: this.props.sidebarOpen ? null : -220 }}>
         <SidebarHeader />
         <SidebarForm />
         <nav className="sidebar-nav">

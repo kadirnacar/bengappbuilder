@@ -25,13 +25,13 @@ export interface AsideAction {
 export type KnownAction = SidebarAction | AsideAction;
 
 export const actionCreators = {
-    toggleSidebar: (): AppThunkAction<KnownAction> => (dispatch, getState) => {
+    toggleSidebar: (isOpen = null): AppThunkAction<KnownAction> => (dispatch, getState) => {
         var state = getState();
-        dispatch({ type: 'TOGGLE_SIDEBAR', isOpen: !state.layout.sidebarOpen });
+        dispatch({ type: 'TOGGLE_SIDEBAR', isOpen: isOpen == null ? !state.layout.sidebarOpen : isOpen });
     },
-    toggleAside: (): AppThunkAction<KnownAction> => (dispatch, getState) => {
+    toggleAside: (isOpen = null): AppThunkAction<KnownAction> => (dispatch, getState) => {
         var state = getState();
-        dispatch({ type: 'TOGGLE_ASIDE', isOpen: !state.layout.asideOpen });
+        dispatch({ type: 'TOGGLE_ASIDE', isOpen: isOpen == null ? !state.layout.asideOpen : isOpen });
     }
 };
 

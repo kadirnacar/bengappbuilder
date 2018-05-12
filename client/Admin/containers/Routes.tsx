@@ -14,6 +14,7 @@ import NewPassword from '../../Shared/views/Login/NewPassword';
 import ForgetPassword from '../../Shared/views/Login/ForgetPassword';
 import Dashboard from '../views/Dashboard/';
 import Forms from '../views/Forms/';
+import FormDetail from '../views/Forms/Detail';
 import HeaderMenu from '../components/HeaderMenu/';
 import nav from './_nav';
 
@@ -29,9 +30,10 @@ class App extends React.Component<any, any> {
             <Route path="/forgetpassword" component={ForgetPassword} />
             <Route path="/activate/:guid" component={Activate} />
             <Route path="/newpassword/:guid" component={NewPassword} />
-            <Full nav={nav} headerMenu={<HeaderMenu/>} sidebarShow={false}>
-                <Route path="/" component={Dashboard} />
-                <Route path="/forms" component={Forms} />
+            <Full nav={nav} headerMenu={<HeaderMenu />} sidebarShow={false}>
+                <Route exact path="/" component={Dashboard} />
+                <Route exact path="/forms" component={Forms} />
+                <Route  path="/forms/Detail/:id?" component={FormDetail} />
                 {/* <PrivateRoute exact path="/" component={Dashboard} authenticated={authenticated} />
                 {authenticated ? null : <Redirect from="/" to="/login" />} */}
             </Full>
@@ -40,7 +42,7 @@ class App extends React.Component<any, any> {
 }
 
 
-export default withRouter(connect<any,any,any,any>(
+export default withRouter(connect<any, any, any, any>(
     (state: ApplicationState) => state.session,
     AuthState.actionCreators
-)(App)) ;
+)(App));

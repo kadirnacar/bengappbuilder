@@ -1,4 +1,3 @@
-$header-height: 40px;
 // Here you can add other styles
 .vTab .col-12 {
     margin: 0;
@@ -1360,21 +1359,11 @@ label {
     padding: 1px 10px;
 }
 
-.card-header {
-    position: relative;
-    padding: 6px 10px;
-}
-
-.card-header .card-actions {
-    height: 100%;
-}
-
 .card-header .card-actions a,
 .card-header .card-actions button {
-    padding: 0 10px;
+    padding: 0.75rem 10px;
     width: inherit;
     background-color: inherit;
-    height: 100%;
 }
 
 .btn-primary {
@@ -1600,11 +1589,9 @@ input[type="number"].table-input {
     text-align: center;
     padding: 2px 7px;
 }
-
-.contract-table .row>div>div {
+.contract-table .row > div > div {
     height: 24px;
 }
-
 .contract-table .react-datepicker-wrapper {
     display: inherit;
     position: absolute;
@@ -1613,13 +1600,11 @@ input[type="number"].table-input {
 .table [class*=' col-'] {
     padding: 0;
 }
-
-.table input[type=number]::-webkit-inner-spin-button,
-.table input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+.table input[type=number]::-webkit-inner-spin-button, 
+.table input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
-
 .table thead th {
     vertical-align: middle;
     border-bottom: 2px solid #a4b7c1;
@@ -1632,97 +1617,9 @@ input[type="number"].table-input {
 .DayPickerInput {
     width: 100%;
 }
-
-.ReactTable .rt-td {
+.ReactTable .rt-td{
     padding: 3px 5px;
 }
-
-.ReactTable .-pagination input,
-.ReactTable .-pagination select {
+.ReactTable .-pagination input, .ReactTable .-pagination select{
     padding: 2px 5px;
-}
-
-.btn-square {
-    border-radius: 0 !important;
-}
-
-.btn:focus,
-.btn.focus {
-    box-shadow: inherit !important;
-}
-
-.aside-menu .nav-tabs .nav-link.btn-dark {
-    color: #fff;
-}
-
-.aside-menu .nav-tabs .nav-link.btn-dark:focus {
-    color: #3e515b;
-}
-
-.aside-menu .nav-tabs .nav-link.active.btn-dark {
-    background-color: #1090e6;
-}
-
-.page-content .navbar {
-    margin: -5px -15px;
-    padding: 0px 5px;
-    font-size: 11px;
-}
-
-.page-content .navbar .nav .nav-item .btn {
-    height: 100%;
-    padding: 4px 10px;
-    font-size: inherit;
-}
-
-.page-content .aside-menu .navbar {
-    margin: 0px 0px 0px -42px;
-}
-
-.page-content .aside-menu .navbar .navbar-brand {
-    padding: 0px;
-    font-size: 11px;
-    margin-right: 0px;
-}
-
-.page-content .aside-menu .navbar .navbar-nav .nav-item .btn {
-    height: 100%;
-    padding: 4px 10px;
-    font-size: inherit;
-}
-
-.toggle-aside {
-    margin-left: -5px;
-}
-
-.sidebar {
-    margin-left: inherit;
-}
-
-.main,
-.app-footer {
-    @media (max-width: 991.98px) {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
-}
-
-.app-footer {
-    flex: 0 0 30px;
-}
-
-.app-header.navbar {
-    height: $header-height;
-}
-
-.app-header.navbar .navbar-brand {
-    height: $header-height;
-}
-
-.header-fixed .app-body {
-    margin-top: $header-height;
-}
-
-.main {
-    padding: 5px;
 }

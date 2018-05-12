@@ -30,7 +30,7 @@ class Full extends React.Component<any, any> {
                         {this.props.children}
                     </Container>
                 </main>
-                <Aside />
+                {/* <Aside /> */}
             </div>
             <Footer />
         </div>

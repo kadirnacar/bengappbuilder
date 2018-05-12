@@ -27,7 +27,8 @@ class Header extends React.Component<any, any> {
 
   mobileSidebarToggle(e) {
     e.preventDefault();
-    document.body.classList.toggle('sidebar-mobile-show');
+    this.props.toggleSidebar();
+    // document.body.classList.toggle('sidebar-mobile-show');
   }
 
   asideToggle(e) {
@@ -39,7 +40,7 @@ class Header extends React.Component<any, any> {
   render() {
     return (
       <header className="app-header navbar">
-        <NavbarToggler className="d-lg-none" onClick={this.mobileSidebarToggle}>
+        <NavbarToggler className="d-lg-none" onClick={this.mobileSidebarToggle.bind(this)}>
           <span className="navbar-toggler-icon"></span>
         </NavbarToggler>
         <NavbarBrand href="#"></NavbarBrand>
@@ -52,9 +53,9 @@ class Header extends React.Component<any, any> {
         <Nav className="ml-auto" navbar>
           <HeaderDropdown />
         </Nav>
-        <NavbarToggler className="d-md-down-none" onClick={this.asideToggle.bind(this)}>
+        {/* <NavbarToggler className="d-md-down-none" onClick={this.asideToggle.bind(this)}>
           <span className="navbar-toggler-icon"></span>
-        </NavbarToggler>
+        </NavbarToggler> */}
       </header>
     );
   }
