@@ -13,6 +13,8 @@ import * as classnames from 'classnames';
 import AsideMenu from './AsideMenu';
 import { Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, TabContent, TabPane, Button } from 'reactstrap';
 
+import Page from '../../../Shared/Layout/Page';
+
 class FormDetail extends React.Component<any, any> {
     constructor(props) {
         super(props);
@@ -56,7 +58,10 @@ class FormDetail extends React.Component<any, any> {
                         </Nav>
                     </Collapse>
                 </Navbar>
-                <AsideMenu/>
+                <AsideMenu />
+                <br />
+                <Page style={{ border: "1px solid #000", height: 100 }}
+                    container="fluid" />
             </div>
         )
     }
