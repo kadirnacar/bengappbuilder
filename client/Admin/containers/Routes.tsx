@@ -8,10 +8,6 @@ import Full from '../../Shared/containers/Full';
 import { ApplicationState } from '../store';
 import * as AuthState from '../../Shared/reducers/Auth';
 import Login from '../../Shared/views/Login';
-import Register from '../../Shared/views/Login/Register';
-import Activate from '../../Shared/views/Login/Activate';
-import NewPassword from '../../Shared/views/Login/NewPassword';
-import ForgetPassword from '../../Shared/views/Login/ForgetPassword';
 import Dashboard from '../views/Dashboard/';
 import Forms from '../views/Forms/';
 import FormDetail from '../views/Forms/Detail';
@@ -26,10 +22,6 @@ class App extends React.Component<any, any> {
         const { checked, authenticated } = this.props;
         return <Switch>
             <Route path="/login" component={Login} />
-            <Route path="/register" component={Register} />
-            <Route path="/forgetpassword" component={ForgetPassword} />
-            <Route path="/activate/:guid" component={Activate} />
-            <Route path="/newpassword/:guid" component={NewPassword} />
             <Full nav={nav} headerMenu={<HeaderMenu />} sidebarShow={false}>
                 <Route exact path="/" component={Dashboard} />
                 <Route exact path="/forms" component={Forms} />

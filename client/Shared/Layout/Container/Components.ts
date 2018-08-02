@@ -1,6 +1,12 @@
-import { Input } from "reactstrap";
+import * as Reactstrap from "reactstrap";
 
 export const Components = {
-    FormInput: Input
+
 }
-export default Components; 
+export default function getComponent(componentName: string) {
+    if (Components[componentName])
+        return Components[componentName];
+    else if (Reactstrap[componentName])
+        return Reactstrap[componentName];
+    else return componentName;
+}; 

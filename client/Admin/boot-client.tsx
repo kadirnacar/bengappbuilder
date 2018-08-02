@@ -21,7 +21,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import 'simple-line-icons/css/simple-line-icons.css';
 import 'react-datepicker/dist/react-datepicker.css';
 import 'react-day-picker/lib/style.css';
-import 'react-select/dist/react-select.css'
+// import 'react-select/dist/react-select.css'
 import 'react-virtualized/styles.css'
 import 'react-virtualized-select/styles.css'
 import 'react-telephone-input/css/default.css';

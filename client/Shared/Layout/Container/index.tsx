@@ -1,8 +1,15 @@
 import * as React from 'react';
 import Components from './Components';
+
 export class Container extends React.Component<any, any>{
     constructor(props) {
         super(props);
+    }
+    shouldComponentUpdate() {
+        return false;
+    }
+    componentWillUpdate(nextProps, nextState) {
+        console.log(nextState);
     }
     render() {
         const style: React.CSSProperties = {
@@ -10,17 +17,23 @@ export class Container extends React.Component<any, any>{
             height: '100%',
             position: "relative"
         }
-        const { data } = this.props;
-        const Tag = Components[data];
-        return <div style={style}>
-            {
-                data.map((item, index) => {
-                    const Tag = Components[Object.keys(item)[0]];
-                    const { children, ...props } = item[Object.keys(item)[0]];
-                    return <Tag key={index} {...props}>{children}</Tag>;
-                })
-            }
-        </div>;
+        const { schema } = this.props;
+
+        return schema.map((item, index) => {
+            const Tag = Components(Object.keys(item)[0]);
+            if (!Tag)
+                return null;
+            const { children, ...props } = item[Object.keys(item)[0]];
+            Object.keys(props).forEach((itm) => {
+                if (typeof props[itm] == "object" && Object.keys(props[itm]).indexOf("function") > -1) {
+                    props[itm] = eval(props[itm]["function"]);
+                }
+            });
+            return <Tag key={index} {...props}>{
+                children ?
+                    (children instanceof Array ? <Container schema={children} /> : children)
+                    : null}</Tag>;
+        })
     }
 
 }

@@ -1,0 +1,43 @@
+{
+    "data": [{
+            "div": {
+                "className":"row",
+                "children": [{
+                        "div": {
+                            "className": "col-md-6",
+                            "children": [{
+                                "input": {
+                                    "type": "password",
+                                    "className": "col-md-12",
+                                    "onClick": {
+                                        "function": "(e) => {console.log(e.target.value);this.setState({value:e.target.value})}"
+                                    }
+                                }
+                            }]
+                        }
+                    },
+                    {
+                        "Alert": {
+                            "className": "col-md-6",
+                            "style": {
+                                "background": "#fff"
+                            },
+                            "children": [{
+                                "input": {
+                                    "type": "password",
+                                    "style": {
+                                        "border": "3px solid #000"
+                                    },
+                                    "onClick": {
+                                        "function": "(e) => {console.log(this.state);}"
+                                    }
+                                }
+                            }]
+                        }
+                    }
+                ]
+            }
+        }
+
+    ]
+}

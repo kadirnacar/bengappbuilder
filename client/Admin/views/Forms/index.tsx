@@ -32,7 +32,7 @@ import {
   Input,
   Table
 } from 'reactstrap';
-import Datatable from '../../../Shared/components/Elements/Datatable';
+import Datatable from '../../../Shared/Layout/Components/Datatable';
 
 class Forms extends React.Component<any, any> {
 

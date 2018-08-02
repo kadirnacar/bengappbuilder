@@ -25,8 +25,8 @@ class FormDetail extends React.Component<any, any> {
             activeTab: '1'
         };
     }
-    componentDidMount() {
-
+    shouldComponentUpdate(){
+        return false;
     }
     componentWillUnmount() {
         this.props.toggleAside(false);
@@ -45,7 +45,9 @@ class FormDetail extends React.Component<any, any> {
             });
         }
     }
+    
     render() {
+        console.log("Detail");
         return (
             <div className="animated fadeIn page-content">
                 <Navbar color="success" dark expand="md">
